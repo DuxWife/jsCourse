@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    'use strict';
+    let num = prompt('Введите число');
+    let lastNum = Number(num.slice(-1));
+    let result = 'Ваша сумма в ' + num;
+    switch (lastNum) {
+        case 0:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+            result += ' рублей';
+            break;
+        case 1:
+            result += ' рубль';
+            break;
+        case 2:
+        case 3:
+        case 4:
+            result += ' рубля';
+            break;
+    }
+    result += ' успешно зачислена.';
+    alert(result);
+</script>
+</body>
+</html>
